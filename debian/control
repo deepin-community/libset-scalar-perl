@@ -1,0 +1,24 @@
+Source: libset-scalar-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Salvatore Bonaccorso <carnil@debian.org>,
+           Florian Schlichting <fsfs@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: extra
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: perl
+Standards-Version: 3.9.8
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libset-scalar-perl.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-perl/packages/libset-scalar-perl.git
+Homepage: https://metacpan.org/release/Set-Scalar
+
+Package: libset-scalar-perl
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+         ${perl:Depends}
+Description: Perl interface for operations on finite sets
+ Set::Scalar provides an interface for working with finite, unordered sets of
+ elements: creating, modifying, displaying, comparing and deriving them; the
+ computation of power sets and the cartesian product of sets. It also provides
+ overloaded operators for most operations.
